@@ -6,7 +6,6 @@
     <div class="col-sm-4 position-absolute top-50 start-50 translate-middle"
         style='max-width:400px'>
         <div class="card">
-            <img src="https://t3.ftcdn.net/jpg/02/61/90/28/360_F_261902858_onbxqSHf193X4w7e8fdRH8vjjoT3vOVZ.jpg" alt="user" class='mx-auto p-4 d-block' style='width:40%;'>
 
         <form class='card-body' method='post' action='../process-login'>
              {% csrf_token %}
@@ -15,8 +14,8 @@
                 <input type="text" name='username' class="form-control"  id="username" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" name='password' id="password">
+                <label for="roomname" class="form-label">Room Name</label>
+                <input type="text" class="form-control" name='roomname' id="roomname">
             </div>
             <div class="mb-3 form-check">
                
