@@ -27,7 +27,7 @@ def room(request, RoomId):
     room_details = Room.objects.get(RoomId=RoomId)
     return render(request, 'room.html', {
         'username': username,
-        'room': room,
+        'room': RoomId,
         'room_details': room_details
     })
 
