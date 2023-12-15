@@ -25,7 +25,7 @@ def process_login(request):
 def room(request, RoomId):
     username = request.GET.get('username')
     room_details = Room.objects.get(RoomId=RoomId)
-    return render(request, 'room.html', {
+    return render(request, 'rooms2.html', {
         'username': username,
         'room': RoomId,
         'room_details': room_details
